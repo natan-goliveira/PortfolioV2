@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+
+
+    --white-1: rgba(255, 255, 255, 0.9);
+    --white-2: rgba(255, 255, 255, 0.6);
+    --purple-1: rgba(203, 172, 249, 0.9);
+
+
+    --font-family: "Inter", sans-serif;
+
+    
+    --font-size-base: 16px;
+    --line-height: 1.5;
+    --border-radius: 4px;
+}

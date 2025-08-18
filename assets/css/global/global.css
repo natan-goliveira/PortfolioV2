@@ -1,0 +1,9 @@
+@import './fonts.css';
+@import './variables.css';
+@import './reset.css';     
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--white-1);
+  line-height: 1.6;
+}
