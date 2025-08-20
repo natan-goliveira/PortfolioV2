@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="./assets/css/pages/index/index.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <script>
+      alterPage('section-1')
+
+      function alterPage(page) {
+        fetch(`assets/${page}.html`)
+          .then(res => res.text())
+          .then(data => {
+            document.body.innerHTML += data
+          })
+          .catch(() => {
+            document.body.innerHTML = "<h2>Erro ao carregar a página</h2>"
+          })
+      }
+    </script>
+  </body>
 </html>
